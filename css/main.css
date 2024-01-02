@@ -7,9 +7,92 @@
     font: inherit;
 }
 
-body{
+body {
     font-family: 'Junge', cursive;
     background: #3532A4;
     color: #fff;
     padding: 20px;
 }
+
+header{
+    display: flex;
+    justify-content: space-between;
+}
+
+header .logo{
+    width: 30%;
+}
+
+header .logo img{
+    width: 50%;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    width: 50%;
+}
+
+/* Coming back to make this an hamburger for responsiveness */
+
+/* nav ul li{
+    margin: 5%;
+} */
+
+a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.hero{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.hero-content1{
+    background: url(../assets/img/hero-image.png) no-repeat;
+    padding: 40px;
+    background-position: center;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.approach{
+    text-align: center;
+    margin: 15px;
+}
+
+/* .figure-background{
+    background-color: #000;
+    width: 100%;
+    padding: 10px;
+    margin: 0;
+} */
+
+.figure-background figcaption{
+    margin: 15px 5px;
+}
+
+.carousel-item img{
+    width: 15.625rem;
+    height: 25.625rem;
+    flex-shrink: 0;
+    border-radius: 15px;
+}
+
+.aboutUs{
+    text-align: center;
+    margin: 20px 10px;
+}
+
+.aboutUs button{
+    padding: 10px;
+    border-radius: 25px;
+    width: 50%;
+    border: none;
+}
+
