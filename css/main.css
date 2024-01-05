@@ -11,20 +11,21 @@ body {
     font-family: 'Junge', cursive;
     background: #3532A4;
     color: #fff;
-    padding: 20px;
 }
 
-header{
+header {
     display: flex;
     justify-content: space-between;
+    margin: 5px 0 0 0;
+    padding: 0px 25px;
 }
 
-header .logo{
-    width: 30%;
+header .logo {
+    width: 40%;
 }
 
-header .logo img{
-    width: 50%;
+header .logo img {
+    width: 90%;
 }
 
 nav ul {
@@ -39,20 +40,22 @@ nav ul {
     margin: 5%;
 } */
 
-a{
+a {
     text-decoration: none;
     color: #fff;
 }
 
-.hero{
+.hero {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    margin-top: 0;
 }
 
-.hero-content1{
+.hero-content1 {
     background: url(../assets/img/hero-image.png) no-repeat;
     padding: 40px;
+    margin: 0 10px;
     background-position: center;
     width: 100%;
     display: flex;
@@ -61,38 +64,169 @@ a{
     text-align: center;
 }
 
-.approach{
+.approach {
     text-align: center;
     margin: 15px;
 }
 
-/* .figure-background{
+.figure-background {
     background-color: #000;
     width: 100%;
-    padding: 10px;
-    margin: 0;
-} */
-
-.figure-background figcaption{
-    margin: 15px 5px;
+    padding: 15px;
 }
 
-.carousel-item img{
+.figure-background figcaption {
+    margin: 5px 5px;
+}
+
+.carousel-item img {
     width: 15.625rem;
     height: 25.625rem;
     flex-shrink: 0;
     border-radius: 15px;
 }
 
-.aboutUs{
+.aboutUs {
     text-align: center;
     margin: 20px 10px;
 }
 
-.aboutUs button{
+.aboutUs button {
     padding: 10px;
     border-radius: 25px;
     width: 50%;
     border: none;
 }
 
+.totalservices {
+    background-color: #fff;
+    padding-top: 10px;
+    margin: 10px 0;
+}
+
+.totalservices h3 {
+    text-align: center;
+}
+
+.totalservices h3,
+.totalservices a {
+    color: #000;
+}
+
+.totalservices figure {
+    display: flex;
+}
+
+.totalservices figure a {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 10px;
+}
+
+figure img,
+fieldset img {
+    width: 100%;
+    height: 50%;
+    border-radius: 10px;
+}
+
+.testimonials {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.testimonials figure {
+    margin: 10px;
+    width: 80%;
+    padding: 5px;
+    background: #fff;
+    color: #000;
+    border-radius: 10px;
+}
+
+.testimonials img {
+    width: 80%;
+    margin: 10px;
+    border: solid 3px #000;
+}
+
+form {
+    background-color: #000;
+    padding: 20px;
+}
+
+form fieldset img {
+    width: 90%;
+    height: 90%;
+    margin-top: 10px;
+}
+
+form div {
+    display: flex;
+    align-items: center;
+}
+
+form label,
+input,
+textarea {
+    width: 100%;
+}
+
+label {
+    margin-left: 10px;
+}
+
+input,
+textarea {
+    border-radius: 10px;
+    border: none;
+}
+
+input::placeholder {
+    font-size: 10px;
+    padding-left: 10px;
+}
+
+
+footer .footer-width1 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-width1 img {
+    width: 80%;
+}
+
+footer .list {
+    display: flex;
+}
+
+footer li {
+    list-style: none;
+    margin-bottom: 10px;
+}
+
+.socials {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 10px;
+}
+
+.back-to-top {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+
+.attribution {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0 0 0;
+    padding: 10px 10px 0 10px;
+    background-color: #000;
+    text-align: center;
+}
