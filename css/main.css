@@ -15,9 +15,9 @@ body {
 
 header {
     display: flex;
-    justify-content: space-between;
-    margin: 5px 0 0 0;
+    justify-content: space-between ;
     padding: 0px 25px;
+    align-items: center;
 }
 
 header .logo {
@@ -25,20 +25,34 @@ header .logo {
 }
 
 header .logo img {
-    width: 90%;
-}
-
-nav ul {
-    display: flex;
-    list-style: none;
     width: 50%;
 }
 
-/* Coming back to make this an hamburger for responsiveness */
+.navbar{
+    background: none !important;
+    margin: 0 !important;
+}
 
-/* nav ul li{
-    margin: 5%;
-} */
+
+.navbar-toggler{
+    border: none;
+}
+
+.navbar-toggler-icon{
+    background-color: #fff !important;
+    border-radius: 5px;
+    border: none;
+}
+
+.navbar-collapse{
+    border: none;
+    margin-right: 0;
+    padding-right: 0;
+}
+
+.nav-link{
+    color: #fff;
+}
 
 a {
     text-decoration: none;
@@ -158,6 +172,11 @@ form {
     padding: 20px;
 }
 
+form h2{
+    text-align: center;
+    margin-bottom: 5px;
+}
+
 form fieldset img {
     width: 90%;
     height: 90%;
@@ -185,6 +204,14 @@ textarea {
     border: none;
 }
 
+input[type="submit"]{
+    width: 60%;
+    display: flex;
+    margin: 10px auto;
+    justify-content: center;
+    font-size: 75%;
+}
+
 input::placeholder {
     font-size: 10px;
     padding-left: 10px;
@@ -194,10 +221,11 @@ input::placeholder {
 footer .footer-width1 {
     display: flex;
     justify-content: space-between;
+    margin: 20px;
 }
 
 .footer-width1 img {
-    width: 80%;
+    width: 60%;
 }
 
 footer .list {
@@ -213,12 +241,14 @@ footer li {
     display: flex;
     justify-content: space-evenly;
     margin-bottom: 10px;
+    font-size: 1.5rem;
 }
 
 .back-to-top {
     display: flex;
     flex-direction: column;
     align-items: end;
+    margin-right: 15px;
 }
 
 .attribution {
@@ -228,5 +258,43 @@ footer li {
     margin: 10px 0 0 0;
     padding: 10px 10px 0 10px;
     background-color: #000;
+    text-align: center;
+}
+
+/* about us */
+
+.about-color{
+    background-color: #000;
+    margin: 15px 0;
+    padding: 15px;
+}
+
+.meetceos h2{
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+
+.full-wrapper{
+    display: flex;
+    flex-direction: row-reverse;
+    padding: 15px;
+    justify-content: center;
+}
+
+.content-img {
+    width: 100%;
+}
+
+.content-img img{
+    width: 90%;
+    height: 90%;
+    border-radius: 20px;
+    margin: 5px;
+}
+
+.content-wrapper{
+    width: 100%;
+    margin: 5px;
     text-align: center;
 }
