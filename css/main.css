@@ -95,7 +95,6 @@ a {
 
 .carousel-item{
     position: relative;
-    /* overflow: hidden; */
     padding-bottom: 75%;
     border-radius: 15px;
 }
@@ -105,7 +104,6 @@ a {
     height: 100%;
     position: absolute;
     object-fit: contain;
-    /* border: solid ; */
 }
 
 .aboutUs {
@@ -124,10 +122,12 @@ a {
     background-color: #fff;
     padding-top: 10px;
     margin: 10px 0;
+    font-weight: bold;
 }
 
 .totalservices h3 {
     text-align: center;
+    font-weight: 700;
 }
 
 .totalservices h3,
@@ -139,11 +139,21 @@ a {
     display: flex;
 }
 
+.totalservices figure img{
+    width: 80%;
+    height: 80%;
+}
+
 .totalservices figure a {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
     margin: 10px;
+    padding: 10px;
+}
+
+button, input[type="submit"]{
+    font-weight: bold;
 }
 
 figure img,
@@ -158,6 +168,11 @@ fieldset img {
     display: flex;
     flex-direction: column;
     align-items: center;
+    font-weight: 700;
+}
+
+.testimonials h3, .testimonials h4{
+    font-weight: 700;
 }
 
 .testimonials figure {
@@ -305,4 +320,55 @@ footer li {
     width: 100%;
     margin: 5px;
     text-align: center;
+}
+
+/* portfolio */
+
+.big-wrapper h2{
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.big figure{
+    text-align: center;
+    padding: 20px;
+}
+
+.big figure img{
+    width: 80%;
+    margin-bottom: 20px;
+}
+
+.big figcaption{
+    margin-bottom: 20px;
+}
+
+.big button{
+    width: 50%;
+    padding: 2px;
+    border: none;
+    border-radius: 20px;
+}
+
+@media screen and (min-width:768px){
+    body{
+        font-size: 2em;
+        padding-top: 20px;
+    }
+
+    header{
+        padding-bottom: 10px;
+    }
+
+    .testimonials{
+        margin-bottom: 20px;
+        padding-bottom: 10px;
+    }
+
+    .socials i{
+        font-size: 3rem;
+    }
+
+
 }
